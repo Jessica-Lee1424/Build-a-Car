@@ -3,7 +3,45 @@ import Vehicle from './Vehicle.js';
 import Wheel from './Wheel.js';
 
 // TODO: The Motorbike class should extend the Vehicle class
-class Motorbike {
+class Motorbike extends Vehicle {
+  vin: string;
+  color: string;
+  make: string;
+  model: string;
+  year: number;
+  weight: number;
+  topSpeed: number;
+  wheels: Wheel[];
+
+  // Constructor for the Truck class
+  constructor(
+    vin: string,
+    color: string,
+    make: string,
+    model: string,
+    year: number,
+    weight: number,
+    topSpeed: number,
+    wheels: Wheel[],
+  ) {
+    // super(vin, color, make, model, year, weight, topSpeed); // Call the parent class constructor
+    super(),
+    this.vin = vin;
+    this.color = color;
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.weight = weight;
+    this.topSpeed = topSpeed;
+
+    // Check if the wheels array has 4 elements
+    if (wheels.length !== 4) {
+      this.wheels = [new Wheel(), new Wheel(), new Wheel(), new Wheel()];
+    } else {
+      this.wheels = wheels;
+    }
+  }
+
   // TODO: Declare properties of the Motorbike class
   // TODO: The properties should include vin, color, make, model, year, weight, top speed, and wheels
   // TODO: The types should be as follows: vin (string), color (string), make (string), model (string), year (number), weight (number), topSpeed (number), wheels (Wheel[])
