@@ -50,7 +50,6 @@ class Cli {
         console.error("Error during vehicle selection:", error);
       });
   }
-
   
   // method to create a vehicle
   createVehicle(): void {
@@ -296,15 +295,15 @@ class Cli {
       .then((answers) => {
         const selectedVehicle = answers.vehicleToTow;
 
-        // TODO: check if the selected vehicle is the truck
+        // Check if the selected vehicle is the truck
         if (selectedVehicle instanceof Truck) {
-          // TODO: if it is, log that the truck cannot tow itself
+        // If it is, log that the truck cannot tow itself
           console.log(`The truck ${selectedVehicle.make} ${selectedVehicle.model} cannot tow itself.`);
           
-          // Perform actions on the truck to allow the user to select another action
+        // Perform actions on the truck to allow the user to select another action
           this.performActionsOnTruck(selectedVehicle);
         } else {
-          // TODO: if it is not, tow the selected vehicle
+
           console.log(`Towing the vehicle: ${selectedVehicle.make} ${selectedVehicle.model}`);
           
           // Perform the towing action (you can define what this means in your context)
@@ -323,7 +322,7 @@ class Cli {
   performActionsOnTruck(truck: Truck): void {
     // Implement the logic for actions that can be performed on the truck
     console.log(`Performing actions on the truck: ${truck.make} ${truck.model}`);
-    // Add your action prompts here
+
   }
   
   // Method to handle towing the selected vehicle
