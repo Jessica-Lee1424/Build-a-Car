@@ -61,13 +61,17 @@ class Cli {
           name: 'vehicleType',
           message: 'Select a vehicle type',
           // TODO: Update the choices array to include Truck and Motorbike
-          choices: ['Car'],
+          choices: ['Car', 'Truck', 'Motorbike'],
         },
       ])
       .then((answers) => {
         if (answers.vehicleType === 'Car') {
           // create a car
           this.createCar();
+        }
+        if (answers.vehicleType === 'Truck') {
+          // create a truck
+          this.createTruck();
         }
         // TODO: add statements to create a truck or motorbike if the user selects the respective vehicle type
       });
@@ -170,12 +174,27 @@ class Cli {
         },
       ])
       .then((answers) => {
-        // TODO: Use the answers object to pass the required properties to the Truck constructor
-        // TODO: push the truck to the vehicles array
-        // TODO: set the selectedVehicleVin to the vin of the truck
-        // TODO: perform actions on the truck
-      });
-  }
+        console.log('here are my answers: ', answers)
+        const truck = new Truck(
+          Cli.generateVin(),         // VIN
+          answers.color,             // Color
+          answers.make,              // Make
+          answers.model,             // Model
+          parseInt(answers.year),    // Year
+          parseInt(answers.weight),   // Weight
+          parseInt(answers.topSpeed), // Top Speed
+          [],
+          parseInt(answers.towingCapacity) // Towing Capacity
+      );
+      // push the truck to the vehicles array
+      this.vehicles.push(truck);
+      // set the selectedVehicleVin to the vin of the car
+      this.selectedVehicleVin = truck.vin;
+      // perform actions on the car
+      this.performActions();
+    });
+}
+ 
 
   // method to create a motorbike
   createMotorbike(): void {
