@@ -37,7 +37,7 @@ https://github.com/Jessica-Lee1424
 jgonnella@test.mail
 
 ## Video Walk Through
-
+https://drive.google.com/file/d/1YYuBe9MYF96f7qpgT9QKMcg7xTKbs53X/view
 
 ## License
 ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
