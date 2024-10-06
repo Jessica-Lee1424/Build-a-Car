@@ -33,10 +33,10 @@ None needed
 ## GitHub Username
 https://github.com/Jessica-Lee1424
 
-## Email Address
-jgonnella@test.mail
+## Email
+jgonnellaTEST@gmail.com
 
-## Video Walk Through
+## Installation
 https://drive.google.com/file/d/1YYuBe9MYF96f7qpgT9QKMcg7xTKbs53X/view
 
 ## License
