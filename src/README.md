@@ -10,12 +10,11 @@ In this process, I learned the importance of reviewing each of the pages within 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Testing](#testing)
-- [GitHub](#GitHub)
-- [Email](#Email)
-- [Video](#VideoWalkThrough)
+- [GitHub](#github)
+- [Email](#email)
+- [Video Walk Through](#video-walk-through)
 - [License](#license)
 - [Contributions](#contributions)
-
 
 ## Description
 This application allows a user to choose from options to either create a vehicle or perform an action on an existing vehicle. Upon selecting one of those choices, the user will then be presented with a variety of additional questions, dependent upon their choice.
