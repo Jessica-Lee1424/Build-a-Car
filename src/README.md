@@ -12,7 +12,7 @@ In this process, I learned the importance of reviewing each of the pages within 
 - [Testing](#testing)
 - [GitHub](#GitHub)
 - [Email](#Email)
-- [Video](#VideoWalkthrough)
+- [Video](#VideoWalkThrough)
 - [License](#license)
 - [Contributions](#contributions)
 
@@ -36,7 +36,7 @@ https://github.com/Jessica-Lee1424
 ## Email
 jgonnellaTEST@gmail.com
 
-## Installation
+## Video Walk Through
 https://drive.google.com/file/d/1YYuBe9MYF96f7qpgT9QKMcg7xTKbs53X/view
 
 ## License
