@@ -50,6 +50,12 @@ class Motorbike extends Vehicle {
     console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
   }
 
+  // Example usage
+  static exampleUsage() {
+    const myMotorbike = new Motorbike("VIN123", "Red", "Yamaha", "YZF-R3", 2021, 200, 180, [new Wheel(), new Wheel()]);
+    myMotorbike.wheelie(); // Output: Motorbike Yamaha YZF-R3 is doing a wheelie!
+  }
+
   // Override the printDetails method from the Vehicle class
   override printDetails(): void {
     super.printDetails(); // Call the printDetails method of the parent class, Vehicle

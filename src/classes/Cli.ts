@@ -272,6 +272,7 @@ class Cli {
         this.selectedVehicleVin = motobike.vin;
         // perform actions on the motorbike
         this.performActions();
+        
       });
   }
    
